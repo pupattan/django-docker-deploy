@@ -12,5 +12,5 @@ mkdir ${DATA_DIR}/html
 mkdir ${DATA_DIR}/dhparam
 mkdir ${DATA_DIR}/certs
 wget https://raw.githubusercontent.com/pupattan/nginx-proxy-docker-deploy-setup/master/dc-nginx-setup.yaml
-docker-compose --file dc-nginx-setup.yaml up -dc
+docker-compose --file dc-nginx-setup.yaml up -d
 echo "Done. Please check docker containers running using 'docker ps -a'"
