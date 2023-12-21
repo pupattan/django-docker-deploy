@@ -36,22 +36,22 @@ volumes:
     driver_opts:
       type: none
       o: bind
-      device: "${DATA_DIR}/conf"
+      device: "/var/websites/conf"
   vhost:
     driver: local
     driver_opts:
       type: none
       o: bind
-      device: "${DATA_DIR}/vhost"
+      device: "/var/websites/vhost"
   html:
     driver: local
     driver_opts:
       type: none
       o: bind
-      device: "${DATA_DIR}/html"
+      device: "/var/websites/html"
   certs:
     driver: local
     driver_opts:
       type: none
       o: bind
-      device: "${DATA_DIR}/certs"
+      device: "/var/websites/certs"
