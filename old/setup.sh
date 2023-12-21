@@ -11,7 +11,7 @@ mkdir ${DATA_DIR}/vhost
 mkdir ${DATA_DIR}/html
 mkdir ${DATA_DIR}/dhparam
 mkdir ${DATA_DIR}/certs
-wget https://raw.githubusercontent.com/pupattan/nginx-proxy-docker-deploy-setup/master/dc-nginx-setup.yaml
+wget https://raw.githubusercontent.com/pupattan/django-docker-deploy/master/dc-nginx-setup.yaml
 docker network create nginx-proxy
 docker-compose --file dc-nginx-setup.yaml up -d
 echo "Done. Please check docker containers running using 'docker ps -a'"
