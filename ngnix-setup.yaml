@@ -57,3 +57,8 @@ volumes:
       o: bind
       device: "/var/websites/certs"
   acme:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: "/var/websites/acme"
