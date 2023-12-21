@@ -1,2 +1,2 @@
-# nginx-proxy-docker-deploy-setup
+# django-docker-deploy
 Set up files for deploying nginx-proxy docker
