@@ -13,6 +13,7 @@ services:
       - vhost:/etc/nginx/vhost.d
       - html:/usr/share/nginx/html
       - certs:/etc/nginx/certs:ro
+      - acme:/etc/acme.sh
       - /var/run/docker.sock:/tmp/docker.sock:ro
     restart: always
 
@@ -55,3 +56,4 @@ volumes:
       type: none
       o: bind
       device: "/var/websites/certs"
+  acme:
